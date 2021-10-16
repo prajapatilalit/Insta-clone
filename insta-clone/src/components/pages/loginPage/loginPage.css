@@ -1,0 +1,35 @@
+/*login page css */
+
+.login_page {
+  display: flex;
+}
+
+.left_div {
+  width: 20%;
+}
+.middle_div {
+  width: 60%;
+}
+
+.right_div {
+  width: 20%;
+}
+
+.loginpage_main {
+  display: flex;
+  padding-top: 20px;
+}
+
+.loginpage_left {
+  margin-right: 25px;
+}
+.loginpage_logo {
+  width: 175px;
+}
+.loginpage_right {
+  width: 350px;
+  height: 380px;
+  border: 1px solid #dbdbdb;
+  padding-top: 5px;
+  text-align: center;
+}
