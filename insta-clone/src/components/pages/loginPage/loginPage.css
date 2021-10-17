@@ -4,17 +4,6 @@
   display: flex;
 }
 
-.left_div {
-  width: 18%;
-}
-.middle_div {
-  width: 60%;
-}
-
-.right_div {
-  width: 18%;
-}
-
 .loginpage_main {
   display: flex;
   padding-top: 20px;
@@ -27,21 +16,22 @@
   width: 175px;
 }
 .loginpage_right {
-  width: 350px;
+  width: 375px;
   border: 1px solid #dbdbdb;
-  padding: 25px 0px;
+  padding: 25px;
   text-align: center;
 }
 
 .loginpage_form {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 30px;
 }
 
 .loginpage_input {
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .loginpage_button {
@@ -57,7 +47,7 @@
 }
 
 .loginpage_line {
-  width: 130px;
+  width: 118px;
   border: 1px solid #dbdbdb;
   height: 0;
 }
