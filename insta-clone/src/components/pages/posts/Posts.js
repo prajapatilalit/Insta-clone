@@ -5,6 +5,7 @@ import pp1 from "../../images/pp1.png";
 import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
 import share from "../../images/share.svg";
+import uploadImage from "../../images/upload1.png";
 
 class Posts extends Component {
   constructor(props) {
@@ -44,17 +45,18 @@ class Posts extends Component {
   render() {
     return (
       <div>
+        <div className="upload_section">
+          <img className="post_uploadimage" src={uploadImage} alt="upload" />
+          <div className="upload">Upload</div>
+        </div>
         <div className="posts_container">
-          {/* header */}
           <div className="posts_header">
             <Avatar className="posts_image" src={pp1} />
             <div className="posts_username">{this.props.username}</div>
           </div>
-          {/* image */}
           <div>
             <img src={this.props.postPicUrl} width="615px" alt="post" />
           </div>
-          {/* analytics */}
           <div className="posts_analytics">
             <div>
               <img class="posts_icon " src={love} alt="love" />
@@ -65,7 +67,6 @@ class Posts extends Component {
               {this.props.likes} likes
             </div>
           </div>
-          {/* comments */}
           <div>
             {this.state.commentList.map((item, index) => (
               <div className="posts_comment" key={index}>

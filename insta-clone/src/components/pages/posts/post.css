@@ -42,3 +42,16 @@
   font-size: 16px;
   padding-left: 15px;
 }
+
+.upload_section {
+  text-align: center;
+  margin: 10px;
+}
+.post_uploadimage {
+  height: 100px;
+}
+
+.upload {
+  margin-top: -25px;
+  font-weight: bold;
+}

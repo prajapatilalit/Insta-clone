@@ -5,7 +5,11 @@
   border: 1px solid #dbdbdd;
   margin-top: 25px;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
+}
+
+.statusbar_container::-webkit-scrollbar {
+  display: none;
 }
 
 .statusbar_avatar {
@@ -21,4 +25,10 @@
   font-size: 12px;
   max-width: 40px;
   overflow-x: hidden;
+}
+
+.add_status {
+  min-width: 55px;
+  min-height: 55px;
+  margin: 30px 20px;
 }
