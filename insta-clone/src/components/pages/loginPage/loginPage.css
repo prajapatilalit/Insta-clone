@@ -45,8 +45,8 @@
 }
 
 .loginpage_button {
-  padding: 8px;
-  margin: 5px 0px;
+  padding: 9px;
+  margin: 10px 0px;
   background-color: #b2dffc;
   border: 0;
 }
@@ -79,7 +79,7 @@
 }
 
 .loginpage_fb button span {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .facebook {
@@ -90,4 +90,37 @@
 .loginpage_right a {
   text-decoration: none;
   color: #1e4978;
+}
+
+.loginpage_signup_signin {
+  width: 350px;
+  height: 70px;
+  padding: 25px 0px;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.loginpage_p {
+  color: #009bf6;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.loginpage_getapp {
+  padding: 20px;
+  text-align: center;
+}
+
+.getApp {
+  margin: 30px 0px;
+}
+
+.loginpage_icon {
+  width: 140px;
+  margin: 5px;
+}
+
+.loginpage_link {
+  text-decoration: none;
 }
