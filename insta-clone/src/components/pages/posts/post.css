@@ -21,3 +21,23 @@
   font-weight: bold;
   margin-top: 20px;
 }
+
+.posts_analytics {
+  padding: 10px;
+}
+
+.posts_icon {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.posts_comment {
+  margin-left: 10px;
+}
+.posts_commentInput {
+  height: 56px;
+  width: 615px;
+  border: 1px solid #dbdbdd;
+  font-size: 16px;
+  padding-left: 10px;
+}
