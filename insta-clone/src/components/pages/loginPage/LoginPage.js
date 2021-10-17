@@ -22,7 +22,7 @@ class LoginPage extends Component {
           <Grid item xs={2}></Grid>
           <Grid item xs={8}>
             <div className="loginpage_main">
-              <div className="loginpage_left">
+              <div>
                 <img src={insta_image} width="454px" alt="pic" />
               </div>
               <div>

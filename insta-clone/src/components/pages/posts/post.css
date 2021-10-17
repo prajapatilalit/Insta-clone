@@ -28,6 +28,7 @@
 
 .posts_icon {
   width: 25px;
+  height: 25px;
   margin-left: 5px;
 }
 
@@ -36,8 +37,8 @@
 }
 .posts_commentInput {
   height: 56px;
-  width: 615px;
+  width: 614px;
   border: 1px solid #dbdbdd;
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 15px;
 }

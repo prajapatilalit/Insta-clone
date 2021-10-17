@@ -9,13 +9,11 @@
   padding-top: 20px;
 }
 
-.loginpage_left {
-  margin-right: 25px;
-}
 .loginpage_logo {
   width: 175px;
 }
 .loginpage_right {
+  margin-top: 25px;
   width: 375px;
   border: 1px solid #dbdbdb;
   padding: 25px;
