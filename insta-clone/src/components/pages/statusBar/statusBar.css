@@ -22,3 +22,9 @@
   max-width: 40px;
   overflow-x: hidden;
 }
+
+.add_status {
+  width: 55px;
+  height: 55px;
+  margin: 25px 10px;
+}

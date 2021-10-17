@@ -1,5 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import React, { Component } from "react";
+import profilImage from "../../images/pp1.png";
+import statusaddImage from "../../images/statusadd.png";
 import "./statusBar.css";
 
 class StatusBar extends Component {
@@ -14,51 +16,51 @@ class StatusBar extends Component {
     let data = [
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
       {
         username: "avataar_angle",
-        imageUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+        imageUrl: profilImage,
       },
     ];
     this.setState({ statusList: data });
@@ -71,14 +73,14 @@ class StatusBar extends Component {
     return (
       <div>
         <div className="statusbar_container">
-          {this.state.statusList.map((item, index) => {
-            return (
-              <div className="status" key={index}>
-                <Avatar className="statusbar_avatar" src={item.imageUrl} />
-                <div className="statusbar_text">{item.username}</div>
-              </div>
-            );
-          })}
+          <img className="add_status" src={statusaddImage} alt="addpic" />
+
+          {this.state.statusList.map((item, index) => (
+            <div className="status" key={index}>
+              <Avatar className="statusbar_avatar" src={item.imageUrl} />
+              <div className="statusbar_text">{item.username}</div>
+            </div>
+          ))}
         </div>
       </div>
     );

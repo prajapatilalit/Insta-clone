@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
+import "./home.css";
 import StatusBar from "../statusBar/StatusBar";
 import Posts from "../posts/Posts";
 import InfoSection from "../infoPage/InfoSection";
 import Suggestion from "../suggestionPage/Suggestion";
+import uploadImage from "../../images/upload1.png";
 
 class Home extends Component {
   constructor(props) {
@@ -62,6 +64,14 @@ class Home extends Component {
           <Grid item xs={2}></Grid>
           <Grid item xs={6}>
             <StatusBar />
+            <div className="upload_section">
+              <img
+                className="post_uploadimage"
+                src={uploadImage}
+                alt="upload"
+              />
+              <div className="upload">Upload</div>
+            </div>
             {this.state.postLists.map((item) => (
               <Posts
                 key={item.postId}
