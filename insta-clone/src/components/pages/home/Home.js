@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import StatusBar from "../statusBar/StatusBar";
 import Posts from "../posts/Posts";
+import InfoSection from "../infoPage/InfoSection";
+import Suggestion from "../suggestionPage/Suggestion";
 
 class Home extends Component {
   constructor(props) {
@@ -57,8 +59,8 @@ class Home extends Component {
     return (
       <div>
         <Grid container>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={5}>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={6}>
             <StatusBar />
             {this.state.postLists.map((item) => (
               <Posts
@@ -71,7 +73,10 @@ class Home extends Component {
               />
             ))}
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={3}>
+            <InfoSection />
+            <Suggestion />
+          </Grid>
           <Grid item xs={1}></Grid>
         </Grid>
       </div>
