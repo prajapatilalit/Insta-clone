@@ -1,34 +1,65 @@
 import { Avatar } from "@material-ui/core";
 import React, { Component } from "react";
 import "./post.css";
+import pp1 from "../../images/pp1.png";
 import love from "../../images/love.svg";
-import message from "../../images/message.svg";
+import comment from "../../images/comment.svg";
 import share from "../../images/share.svg";
 
 class Posts extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      commentList: [],
+    };
   }
+
+  componentDidMount() {
+    this.getComments();
+  }
+
+  getComments = () => {
+    let data = [
+      {
+        username: "Manav singh",
+        commentId: 1,
+        timeStamp: "9:30, 21/05/2021",
+        description: "good post",
+      },
+      {
+        username: "Payal rathaor",
+        commentId: 2,
+        timeStamp: "9:30, 21/05/2021",
+        description: "good post",
+      },
+      {
+        username: "John mark",
+        commentId: 3,
+        timeStamp: "9:30, 21/05/2021",
+        description: "good post",
+      },
+    ];
+    this.setState({ commentList: data });
+  };
   render() {
     return (
       <div>
         <div className="posts_container">
           {/* header */}
           <div className="posts_header">
-            <Avatar className="posts_image" src={this.props.profilimage} />
+            <Avatar className="posts_image" src={pp1} />
             <div className="posts_username">{this.props.username}</div>
           </div>
           {/* image */}
           <div>
-            <img src={this.props.postPic} width="615px" alt="post" />
+            <img src={this.props.postPicUrl} width="615px" alt="post" />
           </div>
           {/* analytics */}
           <div className="posts_analytics">
             <div>
-              <img class="posts_icon " src={love} />
-              <img class="posts_icon " src={message} />
-              <img class="posts_icon " src={share} />
+              <img class="posts_icon " src={love} alt="love" />
+              <img class="posts_icon " src={comment} alt="comment" />
+              <img class="posts_icon " src={share} alt="share" />
             </div>
             <div style={{ fontWeight: "bold", marginLeft: "10px" }}>
               {this.props.likes} likes
@@ -36,11 +67,12 @@ class Posts extends Component {
           </div>
           {/* comments */}
           <div>
-            <div className="posts_comment">Hello comments</div>
-            <div className="posts_comment">Hello comments</div>
-            <div className="posts_comment">Hello comments</div>
-            <div className="posts_comment">Hello comments</div>
-            <div className="posts_comment">Hello comments</div>
+            {this.state.commentList.map((item, index) => (
+              <div className="posts_comment" key={index}>
+                {item.username} : Comment id: {item.commentId}{" "}
+              </div>
+            ))}
+
             <input
               className="posts_commentInput"
               type="text"
