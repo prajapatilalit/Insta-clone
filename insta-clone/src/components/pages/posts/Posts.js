@@ -1,6 +1,9 @@
 import { Avatar } from "@material-ui/core";
 import React, { Component } from "react";
 import "./post.css";
+import love from "../../images/love.svg";
+import message from "../../images/message.svg";
+import share from "../../images/share.svg";
 
 class Posts extends Component {
   constructor(props) {
@@ -23,9 +26,9 @@ class Posts extends Component {
           {/* analytics */}
           <div className="posts_analytics">
             <div>
-              <i class=" posts_icon far fa-heart"></i>
-              <i class=" posts_icon far fa-comments"></i>
-              <i class=" posts_icon fas fa-share"></i>
+              <img class="posts_icon " src={love} />
+              <img class="posts_icon " src={message} />
+              <img class="posts_icon " src={share} />
             </div>
             <div style={{ fontWeight: "bold", marginLeft: "10px" }}>
               {this.props.likes} likes
