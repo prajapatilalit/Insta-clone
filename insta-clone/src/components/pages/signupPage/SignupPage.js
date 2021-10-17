@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../loginPage/loginPage.css";
-class SigninPage extends Component {
+class SignupPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,18 +12,28 @@ class SigninPage extends Component {
           <input
             className="loginpage_input"
             type="text"
-            placeholder="Phone number, username or email address"
+            placeholder="Mobile number or email address"
+          />
+          <input
+            className="loginpage_input"
+            type="text"
+            placeholder="Full Name"
+          />
+          <input
+            className="loginpage_input"
+            type="text"
+            placeholder="Username"
           />
           <input
             className="loginpage_input"
             type="password"
             placeholder="Password"
           />
-          <button className="loginpage_button">Login</button>
+          <button className="loginpage_button">Signup</button>
         </div>
       </div>
     );
   }
 }
 
-export default SigninPage;
+export default SignupPage;
